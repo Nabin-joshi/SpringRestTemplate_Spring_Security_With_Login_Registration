@@ -9,10 +9,10 @@ import org.springframework.mail.javamail.JavaMailSenderImpl;
 import java.util.Properties;
 
 @SpringBootApplication
-public class IaccountingRestApplication  {
+public class IPashalRestApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(IaccountingRestApplication.class, args);
+		SpringApplication.run(IPashalRestApplication.class, args);
 	}
 	@Bean
 	public JavaMailSender blMailSender() {

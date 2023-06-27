@@ -43,20 +43,20 @@ spring:
 
 ############## Server port configuration ################
 server:
-  port: 9999
+  port: 8181
 
 rest-microservice-api:
   protocol: http
   domain: localhost
-  port: 9999
+  port: 8181
 
 database:
-  username: postgres
-  password: Postgres1*#
-  databaseName: iaccountingdb
-  port: 5432
-  driverClassName: org.postgresql.Driver
-  databaseType: postgresql
+  username: root
+  password: root
+  databaseName: ipasal
+  port: 3306
+  driverClassName: com.mysql.cj.jdbc.Driver
+  databaseType: mysql
 
 file:
   upload:
