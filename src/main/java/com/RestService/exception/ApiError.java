@@ -6,11 +6,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateTimeSerializer;
 
-/**
- * {@code ApiError} is a custom error response class which holds the erros. 
- * @author Umesh Bhujel
- * @since 1.0
- */
+
 public class ApiError {
 	private Integer status;
 	private String message;

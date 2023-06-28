@@ -13,9 +13,7 @@ import lombok.Getter;
 public class CustomSqlException extends JdbiException {
 	private static final long serialVersionUID = 6516144753054576629L;
 	private final HttpStatus status = HttpStatus.INTERNAL_SERVER_ERROR;
-	/**
-	 * @param message
-	 */
+
 	public CustomSqlException(String message) {
 		super(message);
 	}

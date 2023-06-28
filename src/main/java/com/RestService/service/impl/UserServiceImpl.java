@@ -15,13 +15,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
-/**
- * {@code UserServiceImpl} is an implementation class of
- * {@link UserService} interface which does all the
- * user related CRUD operations.
- * @author Umesh Bhujel
- * @since 1.0
- */
+
 @Service
 @RequiredArgsConstructor
 @Slf4j

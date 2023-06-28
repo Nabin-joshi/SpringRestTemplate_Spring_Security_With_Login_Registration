@@ -2,11 +2,7 @@ package com.RestService.service;
 
 import org.jdbi.v3.core.Jdbi;
 import org.springframework.stereotype.Service;
-/**
- * 
- * @author Umesh Bhujel
- *
- */
+
 @Service
 public class DbService {
 	private Jdbi jdbi;

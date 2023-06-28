@@ -11,13 +11,7 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-/**
- *
- * {@code User} represents the user entity.
- * User entity also represents the authenticated user on the system.
- * @author Umesh Bhujel
- * @since 1.0
- */
+
 @Data
 @NoArgsConstructor
 @Builder

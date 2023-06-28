@@ -3,13 +3,7 @@ package com.RestService.converter;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**
- * Abstract base converter class for every child converter classes.
- * @param <E>Entity object
- * @param <D> DTO object
- * @author <b> Umesh Bhujel
- * @since 1.0
- */
+
 public abstract class BaseConverter<E, D> {
 
 	public abstract E fromDto(D dto);
