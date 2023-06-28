@@ -1,0 +1,135 @@
+############## Configuration for the jwt ################
+jwt:
+  security:
+    key: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
+  applicationName: ishanitech
+  expirationDate: 1728000000
+  auth:
+    header: Authorization
+    schema: Bearer
+
+  #####Mail Configuraton ##########
+  mail:
+    default-encoding: UTF-8
+    host: mail.ishanitech.com
+    username: test@ishanitech.com
+    password: Password1*#
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+    protocol: smtp
+
+############## Configuration for multipart surpport ###############
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 2KB
+      max-file-size: 50MB
+      max-request-size: 100MB
+
+  sql:
+    init:
+      mode: always
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+
+############## Server port configuration ################
+server:
+  port: 8181
+
+rest-microservice-api:
+  protocol: http
+  domain: localhost
+  port: 8181
+
+database:
+  username: root
+  password: root
+  databaseName: ipasal
+  port: 3306
+  driverClassName: com.mysql.cj.jdbc.Driver
+  databaseType: mysql
+
+file:
+  upload:
+    directory: /home/suraj/Documents/ishanitech/iaccounting/Files/
+
+---
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 2KB
+      max-file-size: 2MB
+      max-request-size: 7MB
+
+rest:
+  protocol: http
+  domain: localhost
+  port: 9999
+  resource-location: resource
+
+logging:
+  loggin:
+    level:
+      root: ERROR
+  file:
+    name: /home/suraj/Documents/ishanitech/iaccounting/logs/iaccounting-rest-api.log
+
+webservice:
+  host-url: http://103.233.58.121:9191/
+
+---
+spring:
+  config:
+    activate:
+      on-profile: prod
+
+############## Server port configuration ################
+server:
+  port: 9999
+
+database:
+  username: postgres
+  password: Postgres1*#
+  databaseName: iaccountingdb
+  port: 5432
+  driverClassName: org.postgresql.Driver
+  databaseType: postgresql
+
+file:
+  upload:
+    directory: /home/suraj/ikhata/Files/
+
+rest:
+  protocol: http
+  domain: 103.233.58.121
+  port: 9999
+  resource-location: resource
+
+logging:
+  loggin:
+    level:
+      root: ERROR
+  file:
+    name: /home/suraj/ikhata/log/ikhata-rest.log
+
+webservice:
+  host-url: http://103.233.58.121:9999/
+
+---
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 2KB
+      max-file-size: 2MB
+      max-request-size: 3MB
